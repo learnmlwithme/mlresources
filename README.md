@@ -1,1 +1,1 @@
-# learnwithmlme
+## Machine Learning Study Resources
