@@ -7,44 +7,193 @@
 </head>
 <style>
     body {
-      font-family: "Georgia", "Times New Roman", Times, serif;
-      font-size: 16px;
-      line-height: 1.6;
-      color: #333;
-      background-color: #fff;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      font-family: "Minion Pro", "Times New Roman", Georgia, serif;
+      font-size: 18px;
+      line-height: 1.65;
+      color: #2c2c2c;
+      background-color: #ffffff;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 2rem;
     }
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 300;
+      color: #a51c30;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #a51c30;
+      padding-bottom: 0.75rem;
+      letter-spacing: -0.5px;
+    }
+    
     h2, h3 {
-      font-weight: normal;
-      margin-top: 2rem;
-      color: #000;
+      font-weight: 400;
+      margin-top: 2.5rem;
+      color: #a51c30;
+      letter-spacing: -0.25px;
     }
+    
     h2 {
-      font-size: 28px;
+      font-size: 30px;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #a51c30;
+      padding-left: 1rem;
     }
+    
     h3 {
-      font-size: 22px;
-      margin-bottom: 0.5rem;
+      font-size: 24px;
+      margin-bottom: 1rem;
+      color: #2c2c2c;
     }
+    
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+      color: #2c2c2c;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+    
     a {
-      color: #0645AD;
+      color: #a51c30;
       text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom-color 0.2s ease;
     }
+    
     a:hover {
-      text-decoration: underline;
+      border-bottom-color: #a51c30;
     }
+    
+    a:visited {
+      color: #7a1425;
+    }
+    
     hr {
-      margin: 2rem 0;
+      margin: 3rem 0;
       border: none;
-      border-top: 1px solid #ccc;
+      border-top: 1px solid #d0d0d0;
+      opacity: 0.7;
     }
-    ol {
-      padding-left: 1.2em;
+    
+    ol, ul {
+      padding-left: 2rem;
+      margin-bottom: 1.5rem;
     }
+    
     li {
-      margin-bottom: 0.5em;
+      margin-bottom: 0.75rem;
+      line-height: 1.7;
+    }
+    
+    blockquote {
+      margin: 2rem 0;
+      padding: 1.5rem 2rem;
+      border-left: 4px solid #a51c30;
+      background-color: #fafafa;
+      font-style: italic;
+      color: #555;
+    }
+    
+    code {
+      font-family: "Monaco", "Consolas", monospace;
+      font-size: 0.9em;
+      background-color: #f5f5f5;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      color: #a51c30;
+    }
+    
+    pre {
+      background-color: #f8f8f8;
+      border: 1px solid #e0e0e0;
+      border-left: 4px solid #a51c30;
+      padding: 1.5rem;
+      overflow-x: auto;
+      margin: 2rem 0;
+      border-radius: 3px;
+    }
+    
+    pre code {
+      background: none;
+      padding: 0;
+      color: #333;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      font-size: 0.95em;
+    }
+    
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    th {
+      background-color: #a51c30;
+      color: white;
+      font-weight: 500;
+    }
+    
+    tbody tr:hover {
+      background-color: #f9f9f9;
+    }
+    
+    strong, b {
+      font-weight: 600;
+      color: #2c2c2c;
+    }
+    
+    em, i {
+      font-style: italic;
+      color: #555;
+    }
+    
+    small {
+      font-size: 0.85em;
+      color: #777;
+    }
+    
+    .highlight {
+      background-color: #fff3cd;
+      padding: 0.2rem 0.4rem;
+      border-radius: 2px;
+    }
+    
+    .harvard-crimson {
+      color: #a51c30;
+      font-weight: 500;
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      h2 {
+        font-size: 24px;
+      }
+      
+      h3 {
+        font-size: 20px;
+      }
     }
 </style>
 <body>
@@ -132,12 +281,6 @@
     <h3>Calculus</h3>
     <ol>
         <li><a href="https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&si=06qjm3rqNeWmrlWG">Calculus by 3Blue1Brown</a></li>
-    </ol>
-    <hr>
-    <h3>Git/GitHub</h3>
-    <ol>
-        <li><a href="https://youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx&si=-OX_RGDfCeMR9PcS">Git by Corey Schafer</a></li>
-        <li><a href="https://youtube.com/playlist?list=PLeo1K3hjS3usJuxZZUBdjAcilgfQHkRzW&si=t-qIzqPxflJuwof1">Git by codebasics</a></li>
     </ol>
     <hr>
     <h3>Books</h3>
